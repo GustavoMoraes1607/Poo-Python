@@ -1,3 +1,4 @@
+from rich import print
 class funcionario:
     empresa = "Curso em vídeo"
     """
@@ -12,9 +13,12 @@ class funcionario:
         return f"Funcionário: {self.nome}, Setor: {self.setor}, Cargo: {self.cargo}, Empresa: {self.emopresa}"
 
     def apresentacao(self):
-        return f"Olá, sou {self.nome} e sou {self.cargo} do setor {self.setor} da empresa {self.empresa}."
+        return f":handshake: Olá, sou [blue]{self.nome}[/] e sou {self.cargo} do setor {self.setor} da empresa {self.empresa}."
 
-c1 = funcionario("Maria", "Administração", "Diretora")
+c1 = funcionario("Camila", "Administração", "Diretora")
 print(c1.apresentacao())
-c2 = funcionario("Pedro", "TI", "Programador")
+c2 = funcionario("Gustavo", "TI", "Programador")
 print(c2.apresentacao())
+
+#Crie a classe Funcionario, onde podemos cadastrar o nome, setor e cargo.
+#Crie também um método que permita o funcionário se apresentar.
