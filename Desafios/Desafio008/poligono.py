@@ -1,4 +1,3 @@
-from rich import print
 from abc import ABC, abstractmethod
 import math
 
